@@ -4,6 +4,7 @@
   "description": "Name: Your full name here",
   "main": "index.html",
   "scripts": {
+    "start": "echo \"server in running\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
