@@ -1,0 +1,101 @@
+<link rel="stylesheet" href="css/dashboard.css" />
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>PEMA</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <nav class="navbar" style="background-color: #f39c12;">
+    <a class="navbar-brand" href="updateProfiel.html"><img src="/images/expenseImage.png" alt="Logo" style="width:40px;">
+      <span id="navUsername">
+        PEMA</span></a>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="logout-btn">Logout</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="user_card col-sm-12">
+        <div class="d-flex justify-content-center form_container">
+          <form id="dashboard-form">
+            <div class="input-group mb-3">
+              <input type="text" name="name" id="name" class="form-control input_user" value="" placeholder="Item Name">
+            </div>
+            <div class="input-group mb-3">
+              <input type="number" name="quantity" id="quantity" class="form-control input_user" value=""
+                placeholder="Item Quantity">
+            </div>
+            <div class="input-group mb-3">
+              <input type="number" name="price" id="price" class="form-control input_user" value=""
+                placeholder="Per Item Price">
+            </div>
+            <div class="input-group mb-2">
+              <input type="date" name="date" id="date" class="form-control input_pass" value="" placeholder="Date">
+            </div>
+            <div class="form-group">
+              <div class="d-flex justify-content-center mt-3 login_container">
+                <button type="submit" name="button" class="btn login_btn" id="add">ADD</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="d-flex justify-content-center mt-3 login_container">
+                <button type="submit" name="button" class="btn login_btn" id="update-btn">Update</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <table class="table col-sm-12" id="tablemanipulate">
+        <thead>
+          <tr>
+            <th scope="col">Item Name</th>
+            <th scope="col">Item Quantity</th>
+            <th scope="col">Per Item Price</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody id="tblbody"></tbody>
+      </table>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="/js/dashboard.js"></script>
+  <script src="/js/logout.js"></script>
+  <script src="/js/profile.js"></script>
+  <!-- <script src="/js/editItem.js"></script> -->
+
+
+</body>
+
+</html>
