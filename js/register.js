@@ -20,7 +20,7 @@ $(function () {
 
         $.ajax({
             type: 'POST',
-            url: 'http://localhost:3000/users/signup',
+            url: HOST_URL + 'users/signup',
             data: users,
             success: function (user) {
                 $('#register-form').trigger('reset');

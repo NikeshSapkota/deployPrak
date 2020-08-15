@@ -14,7 +14,7 @@ $(function () {
 
     $.ajax({
         type: "GET",
-        url: "http://localhost:3000/profile/profileMe",
+        url: HOST_URL + '/profile/profileMe',
         success: function (me) {
             let forNavi = me;
             get(forNavi);

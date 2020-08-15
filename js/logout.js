@@ -31,7 +31,8 @@ $(function () {
         if (confirm("Do you really want to Logout?")) {
             $.ajax({
                 type: 'GET',
-                url: 'http://localhost:3000/users/logout',
+                url: HOST_URL + '/users/logout',
+                
                 success: function () {
                     // alert("Logging Out Succesfully");
                     window.location = "index.html";

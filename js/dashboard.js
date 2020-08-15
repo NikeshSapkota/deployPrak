@@ -17,7 +17,7 @@ $(function () {
 
     $.ajax({
         type: 'GET',
-        url: 'http://localhost:3000/dashboard',
+        url: HOST_URL + '/dashboard',
         success: function (dashboard) {
             let myRows = [];
             $.each(dashboard, function (index, dashboard) {
@@ -41,7 +41,7 @@ $(function () {
         
         $.ajax({
             type: 'POST',
-            url: 'http://localhost:3000/dashboard',
+            url: HOST_URL + '/dashboard',
             data: dashboard,
             success: function (dashboard) {
                 tblBody.append(rowTemplate(dashboard));
@@ -60,7 +60,7 @@ $(function () {
         if (confirm("Do you want to delete this entry?")) {
             $.ajax({
                 type: 'DELETE',
-                url: 'http://localhost:3000/dashboard/' + $(this).attr('dashboard_id'),
+                url: HOST_URL + '/dashboard' + $(this).attr('dashboard_id'),
                 success: function () {
                     location.reload();
                 }
@@ -73,7 +73,7 @@ $(function () {
         itemId = $(this).attr('dashboard_id');
         $.ajax({
             type: 'GET',
-            url: 'http://localhost:3000/dashboard/' + itemId,
+            url: HOST_URL + '/dashboard' + itemId,
             success: function (dashboard) {
                 // console.log(dashboard);
                 $('#name').val(dashboard.itemname);
@@ -96,7 +96,7 @@ $(function () {
         };
         $.ajax({
             type: 'PUT',
-            url: 'http://localhost:3000/dashboard/' + itemId,
+            url: HOST_URL + '/dashboard' + itemId,
             data: dashboard,
             success: function (dashboard) {
                 e.preventDefault();

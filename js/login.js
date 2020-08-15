@@ -17,7 +17,7 @@ $(function () {
 
         $.ajax({
             type: 'POST',
-            url: 'http://localhost:3000/users/login',
+            url: HOST_URL + '/users/login',
             data: users,
             success: function (user) {
                 $('#login-form').trigger('reset');

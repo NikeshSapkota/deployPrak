@@ -16,7 +16,7 @@ $(function () {
 
     $.ajax({
         type: "GET",
-        url: "http://localhost:3000/profile/profileMe",
+        url: HOST_URL + '/profile/profileMe',
         success: function (meC) {
             let forNaviC = meC;
             get(forNaviC);
@@ -40,7 +40,8 @@ $(function () {
 
         $.ajax({
             type: 'PUT',
-            url: 'http://localhost:3000/profile/updateProfile',
+            url: HOST_URL + '/profile/updateProfile',
+            
             data: users,
             success: function (user) {
                 $('#update-form').trigger('reset');

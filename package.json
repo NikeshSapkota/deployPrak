@@ -4,19 +4,12 @@
   "description": "Name: Your full name here",
   "main": "index.html",
   "scripts": {
-    "start": "echo \"server in running\"",
+    "start": "serve ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/stw304cem/t3-frontend-web-pchaudhary572.git"
-  },
+
   "author": "Prakash Chaudhary",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/stw304cem/t3-frontend-web-pchaudhary572/issues"
-  },
-  "homepage": "https://github.com/stw304cem/t3-frontend-web-pchaudhary572#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "serve": "^11.3.2"
